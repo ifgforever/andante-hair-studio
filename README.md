@@ -79,8 +79,8 @@ the ranking. Men's haircuts are covered honestly on `/services` instead.
    published. The six cards on `/services` are the ordinary categories for a
    full-service salon, written without any invented specifics. Confirm or cut.
 2. **Cash only.** Sourced from Yelp, not from the shop.
-3. **Walk-ins.** No claim is made either way — the copy says "call first". If
-   they take walk-ins, that is worth saying outright.
+3. ~~Walk-ins~~ — resolved. Appointment-only, confirmed by the owner's side.
+   Stated on every page.
 4. **Photos.** See `photos/README.md` for the five slots and
    `photos/install.sh` to add one. Slots render as designed panels while empty,
    so the site is not broken without them — but real photos are still the
