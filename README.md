@@ -71,14 +71,16 @@ the ranking. Men's haircuts are covered honestly on `/services` instead.
 - Address, phone, Tue–Sat 10am–6pm, closed Sun/Mon, 5.0 across 36 reviews —
   Google Business Profile, read Aug 15 2026.
 - "90% recommend (15 reviews)", the salon description — the Facebook page.
-- Cash only — Yelp ("does not take credit cards").
+- Payment: cash and cards — from the owner's side. Yelp says "does not take
+  credit cards"; that listing is wrong and worth correcting at the source.
 
 ## Needs confirmation from the owner
 
 1. **The service list.** Only "a full range of hair care services" was ever
    published. The six cards on `/services` are the ordinary categories for a
    full-service salon, written without any invented specifics. Confirm or cut.
-2. **Cash only.** Sourced from Yelp, not from the shop.
+2. ~~Cash only~~ — resolved. She accepts cards. Yelp still says otherwise;
+   someone should fix that listing.
 3. ~~Walk-ins~~ — resolved. Appointment-only, confirmed by the owner's side.
    Stated on every page.
 4. **Photos.** See `photos/README.md` for the five slots and
