@@ -198,13 +198,16 @@ em { font-style: italic; }
 .hero {
   position: relative;
   background-color: var(--espresso);
+  /* The storefront photo is bright daylight with a lot of sky, so the scrim is
+     weighted to the left where the copy sits and eased off to the right so the
+     awning and the sign stay readable. */
   background-image:
-    linear-gradient(180deg, rgba(18,17,16,.58) 0%, rgba(18,17,16,.76) 60%, rgba(18,17,16,.93) 100%),
-    radial-gradient(120% 90% at 78% 8%, rgba(176,141,79,.42) 0%, transparent 62%),
-    radial-gradient(90% 80% at 8% 96%, rgba(217,195,176,.24) 0%, transparent 60%),
+    linear-gradient(100deg, rgba(12,11,10,.94) 0%, rgba(12,11,10,.86) 34%, rgba(12,11,10,.58) 66%, rgba(12,11,10,.44) 100%),
+    linear-gradient(180deg, rgba(12,11,10,.30) 0%, transparent 30%, rgba(12,11,10,.55) 100%),
+    radial-gradient(120% 90% at 82% 12%, rgba(176,141,79,.20) 0%, transparent 60%),
     url("/photos/hero.jpg");
   background-size: cover, cover, cover, cover;
-  background-position: center, center, center, center;
+  background-position: center, center, center, center 62%;
   color: var(--cream);
   padding: 84px 0 88px;
   overflow: hidden;
@@ -325,20 +328,23 @@ section.alt .card { background: var(--cream); }
 .photo.tall { min-height: 420px; }
 .photo.tall::before { font-size: 9rem; }
 
-.photo-a { background-image: radial-gradient(110% 90% at 22% 12%, rgba(176,141,79,.55) 0%, transparent 62%), linear-gradient(150deg, #2b241e 0%, #1d1815 70%), url("/photos/salon-1.jpg"); }
-.photo-b { background-image: radial-gradient(110% 90% at 78% 18%, rgba(217,195,176,.36) 0%, transparent 62%), linear-gradient(150deg, #241e19 0%, #191411 70%), url("/photos/salon-2.jpg"); }
-.photo-c { background-image: radial-gradient(110% 95% at 40% 88%, rgba(176,141,79,.48) 0%, transparent 64%), linear-gradient(150deg, #2e2721 0%, #1d1815 72%), url("/photos/salon-3.jpg"); }
-.photo-d { background-image: radial-gradient(110% 90% at 85% 82%, rgba(217,195,176,.30) 0%, transparent 60%), linear-gradient(150deg, #221c18 0%, #17120f 70%), url("/photos/salon-4.jpg"); }
+/* The tint layers must stay translucent: they sit above the photo, so anything
+   opaque here hides the image entirely and you get the placeholder forever.
+   With no file present the espresso background-color shows through instead. */
+.photo-a { background-image: radial-gradient(110% 90% at 22% 12%, rgba(176,141,79,.16) 0%, transparent 62%), linear-gradient(150deg, rgba(43,36,30,.30) 0%, rgba(18,17,16,.42) 70%), url("/photos/salon-1.jpg"); }
+.photo-b { background-image: radial-gradient(110% 90% at 78% 18%, rgba(217,195,176,.14) 0%, transparent 62%), linear-gradient(150deg, rgba(36,30,25,.28) 0%, rgba(18,17,16,.40) 70%), url("/photos/salon-2.jpg"); }
+.photo-c { background-image: radial-gradient(110% 95% at 40% 88%, rgba(176,141,79,.16) 0%, transparent 64%), linear-gradient(150deg, rgba(46,39,33,.26) 0%, rgba(18,17,16,.40) 72%), url("/photos/salon-3.jpg"); }
+.photo-d { background-image: radial-gradient(110% 90% at 85% 82%, rgba(217,195,176,.14) 0%, transparent 60%), linear-gradient(150deg, rgba(34,28,24,.28) 0%, rgba(18,17,16,.42) 70%), url("/photos/salon-4.jpg"); }
 
 .photo-strip {
   display: grid;
   gap: 14px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 }
 .photo-strip .photo { min-height: 180px; }
 @media (min-width: 720px) {
-  .photo-strip { grid-template-columns: repeat(4, 1fr); }
-  .photo-strip .photo { min-height: 230px; }
+  .photo-strip { grid-template-columns: repeat(3, 1fr); }
+  .photo-strip .photo { min-height: 240px; }
 }
 
 /* ---------- Quotes ---------- */
