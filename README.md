@@ -91,7 +91,7 @@ the ranking. Men's haircuts are covered honestly on `/services` instead.
 - Address, phone, Tue–Sat 10am–6pm, closed Sun/Mon, 5.0 across 36 reviews —
   Google Business Profile, read Aug 15 2026.
 - "90% recommend (15 reviews)", the salon description — the Facebook page.
-- Payment: cash and cards — from the owner's side. Yelp says "does not take
+- Perms and body waves, payment by cash and cards — from the owner's side. Yelp says "does not take
   credit cards"; that listing is wrong and worth correcting at the source.
 
 ## Needs confirmation from the owner
@@ -99,9 +99,7 @@ the ranking. Men's haircuts are covered honestly on `/services` instead.
 1. **The service list.** Only "a full range of hair care services" was ever
    published. The cards on `/services` are the ordinary categories for a
    full-service salon, written without any invented specifics. Confirm or cut.
-   **Perms** are on the page on Lance's "pretty sure" plus a scraped Booksy
-   listing that mentions them — confirm before leaning on it further, because
-   it is the one term worth building a page around.
+   **Perms are confirmed** by the owner and have their own page at `/perms`.
 2. ~~Cash only~~ — resolved. She accepts cards. Yelp still says otherwise;
    someone should fix that listing.
 3. ~~Walk-ins~~ — resolved. Appointment-only, confirmed by the owner's side.
