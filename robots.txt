@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://andantehairstudio.com/sitemap.xml
+Sitemap: https://andante-hair-studio.pages.dev/sitemap.xml

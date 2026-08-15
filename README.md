@@ -78,8 +78,22 @@ the ranking. Men's haircuts are covered honestly on `/services` instead.
 
 ## Deploy
 
+Live at **https://andante-hair-studio.pages.dev** (Cloudflare Pages project
+`andante-hair-studio`, production branch `main`).
+
+```bash
+npx wrangler pages deploy . --project-name andante-hair-studio
+```
+
+### When a real domain shows up
+
 `andantehairstudio.com` is registered but parked at GoDaddy — it is not the
-shop's. It has to be bought or transferred before this goes live at that
-address. Canonicals, sitemap and robots.txt all assume it.
+shop's, and it would have to be bought or transferred. Until then, canonicals,
+`og:url`, the JSON-LD `url`/`@id`, `sitemap.xml` and `robots.txt` all point at
+the pages.dev address so the site is self-consistent and indexable as-is.
+
+Switching domains is one find-and-replace of `https://andante-hair-studio.pages.dev`
+across `*.html`, `sitemap.xml` and `robots.txt`, then attaching the domain to
+the Pages project.
 
 Website credit: [risendust.com](https://risendust.com).
