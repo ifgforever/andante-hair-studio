@@ -1,8 +1,18 @@
 # Andante Hair Studio — website
 
 A gift site for Andante Hair Studio, 3451 N Central Ave #1, Chicago IL 60634.
-Static HTML/CSS, no build step, no JavaScript, no third-party requests except
-the Google Maps embed.
+Static HTML/CSS, no build step, no JavaScript. Third-party requests are the
+Google Maps embed and Google Fonts (Cormorant Garamond, Jost, Parisienne).
+
+## Design
+
+Built on the salon's own branding rather than an invented one. The awning at
+3451 N Central is a white brush script over wide-tracked caps on near-black, so
+the wordmark is that lockup (Parisienne over Jost) and the palette is black,
+white and a single brass accent.
+
+**Booking is by appointment — Andante is not a walk-in shop.** Every page says
+so. Do not reintroduce walk-in language.
 
 ## Pages
 
@@ -71,10 +81,15 @@ the ranking. Men's haircuts are covered honestly on `/services` instead.
 2. **Cash only.** Sourced from Yelp, not from the shop.
 3. **Walk-ins.** No claim is made either way — the copy says "call first". If
    they take walk-ins, that is worth saying outright.
-4. **Photos.** There are none on the site. Real interior and work photos would
-   help more than any copy change. Strip EXIF before publishing.
-5. **The review counts** in `/about` will go stale. Either keep them updated or
-   soften to "5.0 on Google".
+4. **Photos.** See `photos/README.md` for the five slots and
+   `photos/install.sh` to add one. Slots render as designed panels while empty,
+   so the site is not broken without them — but real photos are still the
+   single biggest remaining improvement.
+5. **The review counts** on `/` and `/about` will go stale. Either keep them
+   updated or soften to "5.0 on Google".
+6. **Staffing.** Copy is written to work for either a solo stylist or a small
+   team. If it is one person, `/about` could say so directly and would be
+   stronger for it.
 
 ## Deploy
 
@@ -84,6 +99,20 @@ Live at **https://andante-hair-studio.pages.dev** (Cloudflare Pages project
 ```bash
 npx wrangler pages deploy . --project-name andante-hair-studio
 ```
+
+### Auto-deploy
+
+`.github/workflows/deploy.yml` deploys on every push to `main`. It needs two
+repo secrets:
+
+```bash
+gh secret set CLOUDFLARE_ACCOUNT_ID --body cb2afb6cac995209211e8e3e57b44d35
+gh secret set CLOUDFLARE_API_TOKEN            # paste a token with Pages:Edit
+```
+
+Mint the token at Cloudflare → My Profile → API Tokens → Edit Cloudflare
+Workers, or a custom token with Account → Cloudflare Pages → Edit. Until both
+secrets exist the workflow will fail and deploys stay manual.
 
 ### When a real domain shows up
 
