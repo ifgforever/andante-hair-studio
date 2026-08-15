@@ -54,6 +54,22 @@ copy for the local pack, not as its own page.
 | hair salons chicago | 720 | 40 |
 | chicago hair salons near me | 90 | 31 |
 
+**Perms are the one genuinely winnable term.** Everything above is KD 40–51 and
+out of reach for a new domain. The perm cluster is not:
+
+| Keyword | Volume | KD |
+|---|---|---|
+| perm chicago | 90 | **10** |
+| chicago perm salon | 40 | **12** |
+| hair perm chicago / perms chicago / where to get a perm in chicago | ~20 each | low |
+
+Low volume, but near-zero competition and unambiguous intent — nobody searches
+"perm chicago" idly. Note that the larger Chicago perm volume is *digital* and
+*Korean* perms ("digital perm chicago" 140, "korean perm chicago" 110), which
+are a different service concentrated in Asian salons. The copy deliberately
+says classic perms and body waves only. Do not chase the digital/Korean terms
+unless she actually offers them.
+
 Head salon terms sit at KD 40–51 — a new domain will not rank for them soon.
 The realistic win is the **local pack plus long-tail service terms**, which is
 why `/services` splits women's / men's / kids' / color into separately
@@ -77,8 +93,11 @@ the ranking. Men's haircuts are covered honestly on `/services` instead.
 ## Needs confirmation from the owner
 
 1. **The service list.** Only "a full range of hair care services" was ever
-   published. The six cards on `/services` are the ordinary categories for a
+   published. The cards on `/services` are the ordinary categories for a
    full-service salon, written without any invented specifics. Confirm or cut.
+   **Perms** are on the page on Lance's "pretty sure" plus a scraped Booksy
+   listing that mentions them — confirm before leaning on it further, because
+   it is the one term worth building a page around.
 2. ~~Cash only~~ — resolved. She accepts cards. Yelp still says otherwise;
    someone should fix that listing.
 3. ~~Walk-ins~~ — resolved. Appointment-only, confirmed by the owner's side.
