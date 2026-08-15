@@ -20,12 +20,13 @@ so. Do not reintroduce walk-in language.
 |---|---|---|
 | `/` | `index.html` | "hair salon chicago", "chicago hair salons", "haircut chicago il" + Portage Park |
 | `/services` | `services.html` | "women's haircut chicago", "men's haircut chicago", "kids haircuts chicago", "color" |
+| `/perms` | `perms.html` | **"perm chicago" (90, KD 10)**, "chicago perm salon", "where to get a perm in chicago" |
 | `/about` | `about.html` | brand / trust page, "hair salon portage park" |
 | `/contact` | `contact.html` | "andante hair studio hours", NAP + map, local pack support |
 
 `_redirects` maps the `.html` forms to the extensionless URLs (301) and catches
-common guesses (`/hours`, `/prices`, `/haircuts`). Same pretty-URL convention as
-tvserviceschicago.com.
+common guesses (`/hours`, `/prices`, `/haircuts`, `/perm`, `/body-wave`). Same
+pretty-URL convention as tvserviceschicago.com.
 
 ## Local preview
 
@@ -64,7 +65,10 @@ out of reach for a new domain. The perm cluster is not:
 | hair perm chicago / perms chicago / where to get a perm in chicago | ~20 each | low |
 
 Low volume, but near-zero competition and unambiguous intent — nobody searches
-"perm chicago" idly. Note that the larger Chicago perm volume is *digital* and
+"perm chicago" idly. `/perms` is the page built for it: ~700 words of genuinely
+useful copy (timing, growth-out, the color interaction, aftercare), FAQPage
+schema on four real questions, and links in from the nav, the footer, the
+homepage colour card and the services card so it is not an orphan. Note that the larger Chicago perm volume is *digital* and
 *Korean* perms ("digital perm chicago" 140, "korean perm chicago" 110), which
 are a different service concentrated in Asian salons. The copy deliberately
 says classic perms and body waves only. Do not chase the digital/Korean terms

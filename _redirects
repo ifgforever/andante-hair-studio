@@ -4,6 +4,7 @@
 /services.html  /services    301
 /about.html     /about       301
 /contact.html   /contact     301
+/perms.html     /perms       301
 
 # Common guesses people and old listings type.
 /hours          /contact     301
@@ -12,4 +13,6 @@
 /prices         /services    301
 /pricing        /services    301
 /haircuts       /services    301
+/perm           /perms       301
+/body-wave      /perms       301
 /barber         /services    301
