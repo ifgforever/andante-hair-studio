@@ -13,6 +13,7 @@ mkdir -p _site/photos
 
 cp ./*.html _site/
 cp styles.css sitemap.xml robots.txt _redirects _site/
+cp favicon.ico favicon.svg apple-touch-icon.png _site/
 # Images only — not the folder's README or installer.
 find photos -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) \
   -exec cp {} _site/photos/ \;
