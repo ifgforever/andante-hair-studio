@@ -6,7 +6,7 @@ set -euo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
 OLD="https://andante-hair-studio.pages.dev"
-NEW="https://andantehairchicago.com"
+NEW="https://www.andantehairchicago.com"
 
 if ! curl -sf -o /dev/null --max-time 10 "$NEW/"; then
   echo "REFUSING: $NEW does not answer yet."

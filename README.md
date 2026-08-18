@@ -116,7 +116,7 @@ the ranking. Men's haircuts are covered honestly on `/services` instead.
 
 ## Deploy
 
-Live at **https://andante-hair-studio.pages.dev** (Cloudflare Pages project
+Live at **https://www.andantehairchicago.com** (Cloudflare Pages project
 `andante-hair-studio`, production branch `main`).
 
 ```bash
@@ -137,15 +137,19 @@ Mint the token at Cloudflare → My Profile → API Tokens → Edit Cloudflare
 Workers, or a custom token with Account → Cloudflare Pages → Edit. Until both
 secrets exist the workflow will fail and deploys stay manual.
 
-### When a real domain shows up
+### Domain
 
-`andantehairstudio.com` is registered but parked at GoDaddy — it is not the
-shop's, and it would have to be bought or transferred. Until then, canonicals,
-`og:url`, the JSON-LD `url`/`@id`, `sitemap.xml` and `robots.txt` all point at
-the pages.dev address so the site is self-consistent and indexable as-is.
+`andantehairchicago.com` — Cloudflare Registrar, bought 2026-08-18, same
+account as the Pages project. **www is canonical**; every canonical, `og:url`,
+JSON-LD `url`/`@id`, sitemap entry and robots line names
+`https://www.andantehairchicago.com`.
 
-Switching domains is one find-and-replace of `https://andante-hair-studio.pages.dev`
-across `*.html`, `sitemap.xml` and `robots.txt`, then attaching the domain to
-the Pages project.
+`andantehairstudio.com` was already parked at a GoDaddy squatter and was
+deliberately not pursued.
+
+The pages.dev address still resolves and still serves the site. That is fine —
+the canonical tags consolidate everything on the real domain.
+
+`switch-domain.sh` does the rewrite if the domain ever changes again.
 
 Website credit: [risendust.com](https://risendust.com).
