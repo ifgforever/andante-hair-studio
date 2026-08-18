@@ -17,6 +17,12 @@ jobs:
       deployments: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history: sitemap lastmod values come from each file's last commit.
+          fetch-depth: 0
+
+      - name: Rebuild sitemap
+        run: ./build-sitemap.sh
 
       # The site is plain static files, so there is nothing to build. The
       # repo root is what gets uploaded, minus what .assetsignore excludes.
