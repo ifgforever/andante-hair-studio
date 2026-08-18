@@ -24,11 +24,14 @@ jobs:
       - name: Rebuild sitemap
         run: ./build-sitemap.sh
 
-      # The site is plain static files, so there is nothing to build. The
-      # repo root is what gets uploaded, minus what .assetsignore excludes.
+      # Stage only site files. Deploying the repo root published README.md and
+      # the shell scripts, and Pages does not honour .assetsignore.
+      - name: Stage site
+        run: ./build-site.sh
+
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy . --project-name andante-hair-studio --branch main
+          command: pages deploy _site --project-name andante-hair-studio --branch main

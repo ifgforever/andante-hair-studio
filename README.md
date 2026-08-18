@@ -120,7 +120,7 @@ Live at **https://andante-hair-studio.pages.dev** (Cloudflare Pages project
 `andante-hair-studio`, production branch `main`).
 
 ```bash
-npx wrangler pages deploy . --project-name andante-hair-studio
+./build-sitemap.sh && ./build-site.sh && npx wrangler pages deploy _site --project-name andante-hair-studio
 ```
 
 ### Auto-deploy

@@ -1,8 +1,0 @@
-# Repo files that must not be published. The README carries the account ID,
-# the SEO working notes and internal commentary about the owner; the scripts
-# and workflow are tooling, not site content.
-README.md
-*.sh
-photos/README.md
-.github
-.wrangler
